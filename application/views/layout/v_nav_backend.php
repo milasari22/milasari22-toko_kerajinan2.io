@@ -1,7 +1,7 @@
 <!-- Main Sidebar Container -->
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="index3.html" class="brand-link">
+    <a href="<?= base_url('admin')?>" class="brand-link">
       <img src="<?= base_url() ?>template/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
       <span class="brand-text font-weight-light">Halaman Admin</span>
     </a>
@@ -14,7 +14,7 @@
           <img src="<?= base_url() ?>template/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">Alexander Pierce</a>
+          <a href="#" class="d-block"><?= $this->session->userdata('nama_user') ?></a>
         </div>
       </div>
 
@@ -47,7 +47,7 @@
           </li>
           
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="<?= base_url('kategori') ?>" class="nav-link <?= base_url('kategori') ?>" class="nav-link <?php if(uri_string(1) == 'kategori'){echo "active"; } ?>">
               <i class="nav-icon fas fa-list"></i>
               <p>
                 Kategori
@@ -57,8 +57,8 @@
 
           
           <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-list"></i>
+            <a href="<?= base_url('barang') ?>" class="nav-link <?= base_url('barang') ?>" class="nav-link <?php if(uri_string(1) == 'barang'){echo "active"; } ?>" class="nav-link">
+              <i class="nav-icon fas fa-cubes"></i>
               <p>
                 Barang
               </p>
