@@ -18,25 +18,24 @@
 <body class="hold-transition login-page">
 <div class="login-box">
   <div class="login-logo">
-    <a href="<?= base_url() ?>"><b>Toko</b>Kerajinan</a>
+    <a href="<?= base_url() ?>"><b>Toko</b><i class="text-warning">Kerajinan</i></a>
   </div>
   <!-- /.login-logo -->
-  <div class="card">
-    <div class="card-body login-card-body">
+  <div class="card ">
+    <div class="card-body login-card-body bg-info">
       <p class="login-box-msg">Silahkan Login</p>
       <?php
 
         echo validation_errors('
         <div class="alert alert-warning alert-dismissible">
           <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-          <h5><i class="icon fas fa-exclamation-triangle"></i> Alert!</h5>
-          Warning alert preview. This alert is dismissable.
+          <h5><i class="icon fas fa-exclamation-triangle"></i> Perhatian!</h5>
         ', '</div>');
 
         if ($this->session->flashdata('error')) {
             echo '<div class="alert alert-danger alert-dismissible">
                   <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                  <h5><i class="icon fas fa-ban"></i> Alert!</h5>';
+                  <h5><i class="icon fas fa-ban"></i> Perhatian!</h5>';
             echo $this->session->flashdata('error');
             echo '</div>';
         } 
@@ -69,7 +68,7 @@
         </div>
         <div class="row">
           <div class="col-8">
-            <div class="icheck-primary">
+            <div class="icheck-warning">
               <input type="checkbox" id="remember">
               <label for="remember">
                 Remember Me
@@ -78,7 +77,7 @@
           </div>
           <!-- /.col -->
           <div class="col-4">
-            <button type="submit" class="btn btn-primary btn-block">Login</button>
+            <button type="submit" class="btn btn-warning btn-block">Login</button>
           </div>
           <!-- /.col -->
         </div>

@@ -7,16 +7,16 @@
     </ol>
     <div class="carousel-inner">
     <div class="carousel-item active">
-        <img class="d-block w-100" src="<?= base_url() ?>assets/slider1.jpg">
+        <img class="d-block w-100" src="<?php base_url() ?>assets/slider1.jpg">
     </div>
     <div class="carousel-item">
-        <img class="d-block w-100" src="<?= base_url() ?>assets/slider2.jpg">
+        <img class="d-block w-100" src="<?php base_url() ?>assets/slider2.jpg">
     </div>
     <div class="carousel-item">
-        <img class="d-block w-100" src="<?= base_url() ?>assets/slider3.jpg">
+        <img class="d-block w-100" src="<?php base_url() ?>assets/slider3.jpg">
     </div>
     <div class="carousel-item">
-        <img class="d-block w-100" src="<?= base_url() ?>assets/slider4.jpg">
+        <img class="d-block w-100" src="<?php base_url() ?>assets/slider4.jpg">
     </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -36,26 +36,26 @@
 
 <div class="card card-solid">
         <div class="card-body pb-0">
-          <div class="row">
+          <div class="row d-flex align-items-stretch">
 
+          <?php foreach ($barang as $key => $value) { ?>
 
           <div class="col-12 col-sm-6 col-md-4 d-flex align-items-stretch flex-column">
               <div class="card bg-light d-flex flex-fill">
                 <div class="card-header text-muted border-bottom-0">
-                  Digital Strategist
+                      <h2 class="lead"><b><?= $value->nama_barang ?></b></h2>
                 </div>
                 <div class="card-body pt-0">
                   <div class="row">
                     <div class="col-7">
-                      <h2 class="lead"><b>Nicole Pearson</b></h2>
-                      <p class="text-muted text-sm"><b>About: </b> Web Designer / UX / Graphic Artist / Coffee Lover </p>
+
+                      <p class="text-muted text-sm"><b>Kategori: </b> <?= $value->nama_kategori ?> </p>
                       <ul class="ml-4 mb-0 fa-ul text-muted">
-                        <li class="small"><span class="fa-li"><i class="fas fa-lg fa-building"></i></span> Address: Demo Street 123, Demo City 04312, NJ</li>
-                        <li class="small"><span class="fa-li"><i class="fas fa-lg fa-phone"></i></span> Phone #: + 800 - 12 12 23 52</li>
+                        <li class="small"><Rp. class="fa-li"><i class="fas fa-lg fa-file-invoice-dollar"></i><span class="badge bg-primary"><?= number_format($value->harga, 0) ?></span></li>
                       </ul>
                     </div>
                     <div class="col-5 text-center">
-                      <img src="<?= base_url() ?>template/dist/img/user1-128x128.jpg" alt="user-avatar" class="img-circle img-fluid">
+                      <img src="<?php base_url() ?>template/dist/img/user1-128x128.jpg" alt="user-avatar" class="img-circle img-fluid">
                     </div>
                   </div>
                 </div>
@@ -72,7 +72,7 @@
               </div>
             </div>
 
-
+            <?php } ?>
 
           </div>
         </div>

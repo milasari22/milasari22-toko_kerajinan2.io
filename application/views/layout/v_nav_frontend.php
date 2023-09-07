@@ -73,7 +73,7 @@
       <li class="nav-item">
       <a class="navbar-brand" data-toggle="dropdown" href="#">
         <span class="brand-text font-weight-light">Pelanggan</span>
-        <img src="<?= base_url() ?>template/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+        <img src="<?php base_url() ?>template/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
       </a>
 
       <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">

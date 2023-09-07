@@ -47,7 +47,7 @@
           </li>
           
           <li class="nav-item">
-            <a href="<?= base_url('kategori') ?>" class="nav-link <?= base_url('kategori') ?>" class="nav-link <?php if(uri_string(1) == 'kategori'){echo "active"; } ?>">
+            <a href="<?= base_url('kategori') ?>" class="nav-link <?= base_url('kategori') ?> <?php if(uri_string(1) == 'kategori'){echo "active"; } ?>">
               <i class="nav-icon fas fa-list"></i>
               <p>
                 Kategori
@@ -57,7 +57,7 @@
 
           
           <li class="nav-item">
-            <a href="<?= base_url('barang') ?>" class="nav-link <?= base_url('barang') ?>" class="nav-link <?php if(uri_string(1) == 'barang'){echo "active"; } ?>" class="nav-link">
+            <a href="<?= base_url('barang') ?>"  class="nav-link <?= base_url('barang') ?> <?php if(uri_string(1) == 'barang'){echo "active"; } ?>" class="nav-link">
               <i class="nav-icon fas fa-cubes"></i>
               <p>
                 Barang
@@ -106,7 +106,7 @@
           </li>
           <li class="nav-item">
             <a href="<?= base_url('auth/logout_user') ?>" class="nav-link">
-              <i class="nav-icon fas fa-sign-out"></i>
+              <i class="nav-icon fas fa-angle-double-left"></i>
               <p>
                 LogOut
               </p>
