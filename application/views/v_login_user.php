@@ -22,7 +22,7 @@
   </div>
   <!-- /.login-logo -->
   <div class="card ">
-    <div class="card-body login-card-body bg-info">
+    <div class="card-body login-card-body">
       <p class="login-box-msg">Silahkan Login</p>
       <?php
 
@@ -67,16 +67,11 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-8">
-            <div class="icheck-warning">
-              <input type="checkbox" id="remember">
-              <label for="remember">
-                Remember Me
-              </label>
+          <div class="col-6">
+              <a href="<?= base_url() ?>" class="btn btn-success btn-block">Website</a>
             </div>
-          </div>
           <!-- /.col -->
-          <div class="col-4">
+          <div class="col-6">
             <button type="submit" class="btn btn-warning btn-block">Login</button>
           </div>
           <!-- /.col -->

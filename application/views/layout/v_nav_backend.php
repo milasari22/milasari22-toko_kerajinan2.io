@@ -38,7 +38,7 @@
 
                
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="<?= base_url('admin') ?>" class="nav-link <?= base_url('kategori') ?> <?php if(uri_string(1) == 'admin'){echo "active"; } ?>">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Dashboard
@@ -57,10 +57,19 @@
 
           
           <li class="nav-item">
-            <a href="<?= base_url('barang') ?>"  class="nav-link <?= base_url('barang') ?> <?php if(uri_string(1) == 'barang'){echo "active"; } ?>" class="nav-link">
+            <a href="<?= base_url('barang') ?>"  class="nav-link ?> <?php if(uri_string(1) == 'barang'){echo "active"; } ?>" class="nav-link">
               <i class="nav-icon fas fa-cubes"></i>
               <p>
                 Barang
+              </p>
+            </a>
+          </li>
+          
+          <li class="nav-item">
+            <a href="<?= base_url('gambarbarang') ?>"  class="nav-link <?php if(uri_string(1) == 'gambarbarang'){echo "active"; } ?>" class="nav-link">
+              <i class="nav-icon fas fa-image"></i>
+              <p>
+                Gambar Barang
               </p>
             </a>
           </li>

@@ -53,7 +53,7 @@ class Barang extends CI_Controller {
         );
 
         
-        if ($this->form_validation->run() == TRUE or FALSE) {
+        if ($this->form_validation->run() == TRUE) {
             $config['upload_path'] = './assets/gambar/';
             $config['allowed_types'] = 'gif|jpg|png|jpeg|ico';
             $config['max_size']     = '5000';
