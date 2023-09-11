@@ -1,3 +1,5 @@
+<h1 class="text-center"><i class="text-warning"><b>Website</b></i><b> Toko</b></h1>
+
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -31,9 +33,54 @@
     </span>
     <span class="sr-only">Next</span>
     </a>
-</div>
+</div><br>
+
+<!--About--->
+<div class="content">
+      <div class="container">
+            <div class="card card-primary card-outline">
+              <div class="card-header">
+                <h1 class="text-center"><b>About</b><i class="text-warning">Me</i></h1>
+              </div>
+              
+        <div class="row">
+          <div class="col-lg-6">
+              <div class="card-body form-group">
+                <h4>Kenapa Harus Toko Kami?</h4>
+                <p class="card-text-">
+                  Karena Toko kami merupakan destinasi terbaik bagi pecinta seni dan
+                  orang-orang yang menghargai keunikan produk-produk handmade
+                  berkualitas tinggi. Dengan keanggunan dan inovasi, kami menghadirkan
+                  beragam kerajinan tangan dari para pengrajin berbakat dan
+                  berpengalaman.
+                </p><br>
+                <img class="d-block w-100" src="<?php base_url() ?>assets/about-1.jpeg">
+              </div>
+            </div>
+            
+          <div class="col-lg-6">
+              <div class="card-body form-group">
+                <img class="d-block w-100" src="<?php base_url() ?>assets/about-2.jpeg"><br>
+                <h4>Tentang Produk</h4>
+                <p class="card-text-">
+                Di Toko kami terdapat banyak hasil karya seni kerajinan yang kami
+                jual. Mulai dari bambu, kertas, batok kelapa, totol bekas, cangkang
+                telu, pelepah pisang, tanah liat dan masih banyak lagi.
+                </p>
+              </div>
+          </div>
+          <!-- /.col-md-6 -->
+        </div>
+        <!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
 
 
+<!--produk kami--->
+<br><h1 class="text-center"><b>Produk</b><i class="text-warning"> <b>Kami</b></i></h1>
 <div class="card card-solid">
         <div class="card-body pb-0">
           <div class="row">

@@ -11,7 +11,7 @@
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-          <img src="<?= base_url() ?>template/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+          <img src="<?= base_url() ?>assets/ft-admin.png" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
           <a href="#" class="d-block"><?= $this->session->userdata('nama_user') ?></a>
@@ -76,9 +76,9 @@
 
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
+              <i class="nav-icon far fa-calendar-alt"></i>
               <p>
-                Starter Pages
+                Laporan Penjualan
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
@@ -99,9 +99,9 @@
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
+              <i class="nav-icon far fa-bookmark"></i>
               <p>
-                Simple Link
+                Cadangan
               </p>
             </a>
           </li>
