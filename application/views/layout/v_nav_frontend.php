@@ -1,8 +1,8 @@
  <!-- Navbar -->
- <nav class="main-header navbar navbar-expand-md navbar-light navbar-white">
+ <nav class="main-header navbar navbar-expand-md navbar-light navbar-warning">
     <div class="container">
       <a href="<?= base_url() ?>" class="navbar-brand">
-        <i class="fas fa-store text-primary"></i>
+        <i class="fas fa-store text-white"></i>
         <span class="brand-text font-weight-light"><b>Toko Kerajinan</b></span>
       </a>
 

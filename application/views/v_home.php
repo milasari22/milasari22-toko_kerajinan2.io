@@ -1,4 +1,8 @@
-<h1 class="text-center"><i class="text-warning"><b>Website</b></i><b> Toko</b></h1>
+<h2 class="text-center"><i class="text-warning"><b>Welcome To</b></i><b> My Website</b></h2>
+        <u><p class="text-center">
+          <strong>Toko kerajinan "Kreasi Indah,"</strong> tempat di mana seni,
+          kreativitas, dan keindahan bertemu.
+        </p></u><br>
 
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
@@ -9,16 +13,16 @@
     </ol>
     <div class="carousel-inner">
     <div class="carousel-item active">
-        <img class="d-block w-100" src="<?php base_url() ?>assets/slider1.jpg">
+        <img class="d-block w-100" src="<?php base_url() ?>assets/slider-1.jpeg">
     </div>
     <div class="carousel-item">
-        <img class="d-block w-100" src="<?php base_url() ?>assets/slider2.jpg">
+        <img class="d-block w-100" src="<?php base_url() ?>assets/slider-2.jpeg">
     </div>
     <div class="carousel-item">
-        <img class="d-block w-100" src="<?php base_url() ?>assets/slider3.jpg">
+        <img class="d-block w-100" src="<?php base_url() ?>assets/slider-3.jpeg">
     </div>
     <div class="carousel-item">
-        <img class="d-block w-100" src="<?php base_url() ?>assets/slider4.jpg">
+        <img class="d-block w-100" src="<?php base_url() ?>assets/slider-4.jpeg">
     </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -36,9 +40,9 @@
 </div><br>
 
 <!--About--->
-<div class="content">
+<br><div class="content">
       <div class="container">
-            <div class="card card-primary card-outline">
+            <div class="card card-warning card-outline">
               <div class="card-header">
                 <h1 class="text-center"><b>About</b><i class="text-warning">Me</i></h1>
               </div>
@@ -54,13 +58,13 @@
                   beragam kerajinan tangan dari para pengrajin berbakat dan
                   berpengalaman.
                 </p><br>
-                <img class="d-block w-100" src="<?php base_url() ?>assets/about-1.jpeg">
+                <img class="d-block w-100" src="<?php base_url() ?>assets/des1.jpeg">
               </div>
             </div>
             
           <div class="col-lg-6">
               <div class="card-body form-group">
-                <img class="d-block w-100" src="<?php base_url() ?>assets/about-2.jpeg"><br>
+                <img class="d-block w-100" src="<?php base_url() ?>assets/des2.jpeg"><br>
                 <h4>Tentang Produk</h4>
                 <p class="card-text-">
                 Di Toko kami terdapat banyak hasil karya seni kerajinan yang kami
