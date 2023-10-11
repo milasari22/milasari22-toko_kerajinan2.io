@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>MILA SARI | <?= $title  ?></title>
 
+  
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
@@ -66,6 +67,9 @@
             </div>
           </div>
         </div>
+        
+        <div class="g-recaptcha" data-sitekey="6Lc0m0AoAAAAAHdYrhe6k1L82XOx58X58fkuOf7M"></div><br>
+        
         <div class="row">
           <div class="col-6">
               <a href="<?= base_url() ?>" class="btn btn-success btn-block">Website</a>
@@ -91,5 +95,7 @@
 <script src="<?= base_url() ?>template/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- AdminLTE App -->
 <script src="<?= base_url() ?>template/dist/js/adminlte.min.js"></script>
+<!--Captcha-->
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </body>
 </html>

@@ -86,30 +86,44 @@
               <li class="nav-item">
                 <a href="#" class="nav-link active">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Active Page</p>
+                  <p>Harian</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="#" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Inactive Page</p>
+                  <p>Bulanan</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Tahunan</p>
                 </a>
               </li>
             </ul>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="nav-icon far fa-bookmark"></i>
+              <i class="nav-icon fas fa-users"></i>
               <p>
-                Cadangan
+                Pelanggan
               </p>
             </a>
           </li>
           <li class="nav-item">
             <a href="<?= base_url('user') ?>" class="nav-link <?php if(uri_string(1) == 'user'){echo "active"; } ?>">
-              <i class="nav-icon fas fa-users"></i>
+              <i class="nav-icon fas fa-user"></i>
               <p>
                 User
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon far fa-bookmark"></i>
+              <p>
+                Cadangan
               </p>
             </a>
           </li>

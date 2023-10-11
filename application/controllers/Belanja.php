@@ -13,10 +13,6 @@ class Belanja extends CI_Controller
 
     public function index()
     {
-        if (empty($this->cart->contents())) {
-            redirect('home');
-        }
-
         $data = array(
             'title' => 'Keranjang Belanja',
             'isi' => 'v_belanja',
