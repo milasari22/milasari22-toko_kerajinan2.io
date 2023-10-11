@@ -22,4 +22,14 @@ class Admin extends CI_Controller
 
          $this->load->view('layout/v_wrapper_backend', $data, FALSE);
     }
+    
+    public function lokasi_toko()
+    {
+        $data = array(
+            'title' => 'Lokasi_toko',
+            'isi' => 'v_lokasi_toko',
+         );
+
+         $this->load->view('layout/v_wrapper_backend', $data, FALSE);
+    }
 }
