@@ -70,4 +70,20 @@ class Pelanggan extends CI_Controller
 
          $this->load->view('layout/v_wrapper_frontend', $data, FALSE);
     }
+
+    public function logout() 
+    {
+        $this->pelanggan_login->logout();
+    }
+
+    public function akun()
+    {
+        //proteksi halaman
+        $this->pelanggan_login->proteksi_halaman();
+        $data = array(
+            'title' => 'Akun Saya',
+            'isi' => 'v_akun_saya',
+        );
+        $this->load->view('layout/v_wrapper_frontend', $data, FALSE);
+    }
 }
