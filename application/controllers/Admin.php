@@ -25,11 +25,53 @@ class Admin extends CI_Controller
     
     public function lokasi_toko()
     {
-        $data = array(
-            'title' => 'Lokasi_toko',
-            'isi' => 'v_lokasi_toko',
-         );
+        
+        $this->form_validation->set_rules(
+            'nama_toko', 
+            'Nama Toko', 
+            'required',
+            array('required' => '%s Harus Diisi !!!')
+        );
+        $this->form_validation->set_rules(
+            'kota', 
+            'Kota', 
+            'required',
+            array('required' => '%s Harus Diisi !!!')
+        );
+        $this->form_validation->set_rules(
+            'alamat_kota', 
+            'Alamat Kota', 
+            'required',
+            array('required' => '%s Harus Diisi !!!')
+        );
+        $this->form_validation->set_rules(
+            'no_telpon', 
+            'No Telpon', 
+            'required',
+            array('required' => '%s Harus Diisi !!!')
+        );
 
-         $this->load->view('layout/v_wrapper_backend', $data, FALSE);
+        
+        if ($this->form_validation->run() == FALSE) {
+            $data = array(
+                'title' => 'lokasi_toko',
+                'lokasi_toko' => $this->m_admin->data_lokasi_toko(),
+                'isi' => 'v_lokasi_toko',
+             );
+    
+             $this->load->view('layout/v_wrapper_backend', $data, FALSE);
+
+        }else{
+            $data = array(
+                'id' => 1,
+                'lokasi' => $this->input->post('kota'),
+                'nama_toko' => $this->input->post('nama_toko'),
+                'alamat_kota' => $this->input->post('alamat_kota'),
+                'no_telpon' => $this->input->post('no_telpon'),
+            );
+            $this->m_admin->edit($data);
+            $this->session->set_flashdata('pesan', 'Alamat Toko Berhasil Diganti!');
+            redirect('admin/lokasi_toko');
+        }
     }
 }

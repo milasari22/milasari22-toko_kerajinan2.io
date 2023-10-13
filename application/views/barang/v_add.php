@@ -74,7 +74,7 @@
                 <div class="form-group">
                     <button type="submit" class="btn btn-success btn-sm">Simpan</button>
                     <a href="<?= base_url('barang') ?>" class="btn btn-danger btn-sm">Kembali</a>
-                    </div>
+                </div>
 
                     
                 <?php echo form_close() ?>

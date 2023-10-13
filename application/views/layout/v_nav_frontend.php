@@ -14,20 +14,20 @@
         <!-- Left navbar links -->
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a href="<?= base_url() ?>" class="nav-link">Home</a>
+            <a class="btn btn-outline-light" href="<?= base_url() ?>" class="nav-link">Home</a>
           </li>
           <?php $kategori = $this->m_home->get_all_data_kategori() ?>
 
           <li class="nav-item">
-            <a href="<?= base_url("#tentang") ?>" class="nav-link">Tentang</a>
+            <br><a class="btn btn-outline-light" href="<?= base_url("#tentang") ?>" class="nav-link">Tentang</a>
           </li>
           
           <li class="nav-item">
-            <a href="<?= base_url("#footer_depan") ?>" class="nav-link">Kontak</a>
+            <a class="btn btn-outline-light" href="<?= base_url("#footer_depan") ?>" class="nav-link">Kontak</a>
           </li>
 
           <li class="nav-item dropdown">
-            <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">Kategori</a>
+            <br><a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle btn btn-outline-light">Kategori</a>
             <ul aria-labelledby="dropdownSubMenu1" class="dropdown-menu border-0 shadow">
               <?php foreach ($kategori as $key => $value) { ?>
                 <li><a href="<?= base_url('home/kategori/' .$value->id_kategori) ?>" class="dropdown-item"><?= $value->nama_kategori ?> </a></li>
