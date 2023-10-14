@@ -89,7 +89,7 @@
                 //console.log(hasil_kota);
                 $("select[name=kota]").html(hasil_kota);
             }
-        })
-        })
+        });
+        });
     });
 </script>
