@@ -86,4 +86,14 @@ class Pelanggan extends CI_Controller
         );
         $this->load->view('layout/v_wrapper_frontend', $data, FALSE);
     }
+
+    public function pesanan_saya()
+        {
+            $this->pelanggan_login->proteksi_halaman();
+            $data = array(
+                'title' => 'Pesanan Saya',
+                'isi' => 'v_pesanan_saya',
+            );
+            $this->load->view('layout/v_wrapper_frontend', $data, FALSE);
+        }
 }

@@ -10,7 +10,7 @@
         <p>
           Jl misalkan<br>
           Jembar, Jawa Timur<br>
-          Email: mikky.228899@gmail.com<br>
+          Email: kelompok04@gmail.com<br>
           Telepon: (123) 456-7890
         </p>
       </div>
