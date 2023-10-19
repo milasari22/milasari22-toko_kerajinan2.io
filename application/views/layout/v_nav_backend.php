@@ -64,14 +64,6 @@
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="<?= base_url('gambarbarang') ?>"  class="nav-link <?php if(uri_string(1) == 'gambarbarang'){echo "active"; } ?>" class="nav-link">
-                    <i class="nav-icon far fa-circle text-success"></i>
-                    <p>
-                      Gambar Barang
-                    </p>
-                  </a>
-                </li>
-                <li class="nav-item">
                   <a href="<?= base_url('kategori') ?>" class="nav-link <?= base_url('kategori') ?> <?php if(uri_string(1) == 'kategori'){echo "active"; } ?>">
                     <i class="nav-icon far fa-circle text-success"></i>
                     <p>
@@ -114,19 +106,21 @@
 
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
+              <i class="nav-icon fas fa-download"></i>
               <p>
-                Transaksi
+                Pesanan
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
             <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="#" class="nav-link active">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Harian</p>
-                </a>
-              </li>
+                <li class="nav-item">
+                  <a href="<?= base_url('admin/pesanan_masuk') ?>"  class="nav-link <?php if(uri_string(1) == 'pesanan_masuk'){echo "active"; } ?>" class="nav-link">
+                    <i class="nav-icon far fa-circle text-info"></i>
+                    <p>
+                      Pesanan Masuk
+                    </p>
+                  </a>
+                </li>
               <li class="nav-item">
                 <a href="#" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
