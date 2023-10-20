@@ -90,16 +90,48 @@
                             <td>
                             <b>Rp.<?= number_format($value->total_bayar,0)?></b><br>
                                 <span class="badge badge-success">Terverifikasi</span><br>
-                                <span class="badge badge-primary">DiDiproses/Dikemas</span>
+                                <span class="badge badge-primary">Diproses/Dikemas</span>
                               <?php } ?>
                             </td>                      
                         </tr>
                   </table>
-                  <div class="tab-pane fade" id="custom-tabs-four-messages" role="tabpanel" aria-labelledby="custom-tabs-four-messages-tab">
-                     Morbi turpis dolor, vulputate vitae felis non, tincidunt congue mauris. Phasellus volutpat augue id mi placerat mollis. Vivamus faucibus eu massa eget condimentum. Fusce nec hendrerit sem, ac tristique nulla. Integer vestibulum orci odio. Cras nec augue ipsum. Suspendisse ut velit condimentum, mattis urna a, malesuada nunc. Curabitur eleifend facilisis velit finibus tristique. Nam vulputate, eros non luctus efficitur, ipsum odio volutpat massa, sit amet sollicitudin est libero sed ipsum. Nulla lacinia, ex vitae gravida fermentum, lectus ipsum gravida arcu, id fermentum metus arcu vel metus. Curabitur eget sem eu risus tincidunt eleifend ac ornare magna.
                   </div>
+                  
+                  
+              <!-- /.Dikirim -->
+                  <div class="tab-pane fade" id="custom-tabs-four-messages" role="tabpanel" aria-labelledby="custom-tabs-four-messages-tab">
+                  <table class="table">
+                        <tr>
+                            <th>No Order</th>
+                            <th>Tanggal</th>
+                            <th>Expedisi</th>
+                            <th>Total Bayar</th>
+                            <th>No Resi</th>
+                        </tr>
+                        <?php foreach ($dikirim as $key => $value) { ?>
+                          <tr>
+                            <td><?= $value->no_order?></td>
+                            <td><?= $value->tgl_order?></td>
+                            <td>
+                              <b><?= $value->expedisi?></b><br>
+                              paket :  <?= $value->paket ?> <br>
+                              ongkir :  <?= number_format ($value->ongkir,0) ?>
+                            </td>
+                            <td>
+                            <b>Rp.<?= number_format($value->total_bayar,0)?></b><br>
+                                <span class="badge badge-success">Dikirim</span><br>
+                            </td>    
+                            <td>
+                              <h5><?= $value->no_resi?></h5>
+                                <a href="" class="btn btn-outline-warning btn-xs">Diterima</a>
+                            </td>                  
+                        </tr>
+                        <?php } ?>
+                  </table>
+                  </div>
+
                   <div class="tab-pane fade" id="custom-tabs-four-settings" role="tabpanel" aria-labelledby="custom-tabs-four-settings-tab">
-                     Pellentesque vestibulum commodo nibh nec blandit. Maecenas neque magna, iaculis tempus turpis ac, ornare sodales tellus. Mauris eget blandit dolor. Quisque tincidunt venenatis vulputate. Morbi euismod molestie tristique. Vestibulum consectetur dolor a vestibulum pharetra. Donec interdum placerat urna nec pharetra. Etiam eget dapibus orci, eget aliquet urna. Nunc at consequat diam. Nunc et felis ut nisl commodo dignissim. In hac habitasse platea dictumst. Praesent imperdiet accumsan ex sit amet facilisis.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi autem quia tempora, placeat iusto laborum deleniti, quos tenetur maxime consequatur nihil id necessitatibus molestias adipisci? Ducimus harum debitis vero itaque?
                   </div>
                 </div>
               </div>
