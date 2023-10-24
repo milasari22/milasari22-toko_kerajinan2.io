@@ -4,7 +4,7 @@
     <div class="container ">
       <a href="#" class="navbar-brand">
       
-      <img src="<?php base_url() ?>assets/logo.jpeg" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <img src="<?php base_url() ?>assets/logo2.jpeg" class="brand-image img-circle elevation-3" style="opacity: .8">
       </a>
 
       <button class="navbar-toggler order-1" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,9 +48,8 @@
                 </a>
 
               <?php } else { ?>
-                <a class="nav-link" data-toggle="dropdown" href="#">
+                <a style="margin-right: 10px;" class="btn btn-outline-light"data-toggle="dropdown" href="#">
                   <span class="brand-text font-weight-light"><?= $this->session->userdata('nama_pelanggan') ?></span>
-                  <img src="<?php base_url('assets/' . $this->session->userdata('foto')) ?>" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
                 </a>
 
             <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">

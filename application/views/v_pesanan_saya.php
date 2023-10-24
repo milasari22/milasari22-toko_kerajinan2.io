@@ -123,16 +123,43 @@
                             </td>    
                             <td>
                               <h5><?= $value->no_resi?></h5>
-                                <a href="" class="btn btn-outline-warning btn-xs">Diterima</a>
-                            </td>                  
+                                <button data-toggle="modal" data-target="#diterima<?= $value->id_transaksi ?>" class="btn btn-outline-warning btn-xs btn-flat">Diterima</button>
+                            </td>           
                         </tr>
                         <?php } ?>
                   </table>
                   </div>
 
+              <!-- /.Selesai -->
                   <div class="tab-pane fade" id="custom-tabs-four-settings" role="tabpanel" aria-labelledby="custom-tabs-four-settings-tab">
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi autem quia tempora, placeat iusto laborum deleniti, quos tenetur maxime consequatur nihil id necessitatibus molestias adipisci? Ducimus harum debitis vero itaque?
-                  </div>
+                  <table class="table">
+                        <tr>
+                            <th>No Order</th>
+                            <th>Tanggal</th>
+                            <th>Expedisi</th>
+                            <th>Total Bayar</th>
+                            <th>No Resi</th>
+                        </tr>
+                        <?php foreach ($selesai as $key => $value) { ?>
+                          <tr>
+                            <td><?= $value->no_order?></td>
+                            <td><?= $value->tgl_order?></td>
+                            <td>
+                              <b><?= $value->expedisi?></b><br>
+                              paket :  <?= $value->paket ?> <br>
+                              ongkir :  <?= number_format ($value->ongkir,0) ?>
+                            </td>
+                            <td>
+                            <b>Rp.<?= number_format($value->total_bayar,0)?></b><br>
+                                <span class="badge badge-success">Selesai</span><br>
+                            </td>    
+                            <td>
+                              <h5><?= $value->no_resi?></h5>
+                            </td>           
+                        </tr>
+                        <?php } ?>
+                  </table>
+                 </div>
                 </div>
               </div>
               <!-- /.card -->
@@ -140,3 +167,28 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi autem quia tempor
         </div>
 </div>
                    
+
+<?php foreach ($dikirim as $key => $value) { ?>
+<div class="modal fade" id="diterima<?= $value->id_transaksi ?>">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Pesanan Diterima</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Apakah Anda Yakin Pesanan Sudah Diterima..?
+            </div>
+            <div class="modal-footer justify-content-between">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Belum</button>
+              <a href="<?= base_url('pesanan_saya/diterima/' . $value->id_transaksi) ?>" class="btn btn-primary">Sudah</a>
+            </div>
+          </div>
+          <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+      </div>
+      <!-- /.modal -->
+<?php } ?>

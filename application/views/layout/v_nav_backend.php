@@ -103,39 +103,15 @@
               </li>
             </ul>
           </li>
-
+          
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="<?= base_url('admin/pesanan_masuk') ?>" class="nav-link <?= base_url('kategori') ?> <?php if(uri_string(1) == 'pesanan_masuk'){echo "active"; } ?>">
               <i class="nav-icon fas fa-download"></i>
               <p>
-                Pesanan
-                <i class="right fas fa-angle-left"></i>
+              Pesanan Masuk
               </p>
             </a>
-            <ul class="nav nav-treeview">
-                <li class="nav-item">
-                  <a href="<?= base_url('admin/pesanan_masuk') ?>"  class="nav-link <?php if(uri_string(1) == 'pesanan_masuk'){echo "active"; } ?>" class="nav-link">
-                    <i class="nav-icon far fa-circle text-info"></i>
-                    <p>
-                      Pesanan Masuk
-                    </p>
-                  </a>
-                </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Bulanan</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Tahunan</p>
-                </a>
-              </li>
-            </ul>
           </li>
-
           
           <li class="nav-item">
             <a href="#" class="nav-link">

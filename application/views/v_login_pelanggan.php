@@ -1,7 +1,7 @@
 <div class="row">
     <div class="col-sm-4"></div>
     <div class="col-sm-4">
-    <div class="register-box">
+    <div class="register-box" >
 <div class="card">
     <div class="card-body register-card-body">
   <div class="login-logo">
@@ -68,9 +68,6 @@
 </div>
     <div class="col-sm-4"></div>
 </div>
-<br>
-<br>
-<br>
 <br>
 <br>
 <br>

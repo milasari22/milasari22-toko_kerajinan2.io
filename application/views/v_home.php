@@ -1,11 +1,7 @@
+
 <div id="carouselExampleDark" class="carousel carousel-light">
-  <img src="<?= base_url() ?>assets/bg-2.jpeg" width="1150px" height="470px">
+  <img src="<?= base_url() ?>assets/bg-5.png" width="1150px" height="470px">
   <div class="carousel-caption d-md-block text-dark" >
-        <h5 class="text-orange"><u><br>TOKO KREASI INDAH <br></u></h5>
-        <p>Beli Bermacam kerajinan unik
-        </p>
-        <p> langsung dari pembuatnya dari seluruh indonesia.</p>
-        <a href="#produk_kami" class="btn btn-outline-warning">Beli Sekarang</a>
   </div>
       <br>
 </div>
