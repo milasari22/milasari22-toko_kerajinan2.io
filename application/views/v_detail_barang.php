@@ -44,6 +44,7 @@
                     <i class="fas fa-cart-plus fa-lg mr-2"></i>
                     Add to Cart
                     </button>
+                    <a href="<?= base_url('belanja/chekout')?>" class="btn btn-success btn-flat"><i class="fas fa-inbox"></i>  Check Out</a>
                   </div>
                 </div>
               </div>
