@@ -28,8 +28,9 @@
 
                 <?php $i = 1; ?>
 
-                <?php foreach ($this->cart->contents() as $items) { 
+                <?php
                     $total_berat = 0;
+                    foreach ($this->cart->contents() as $items) { 
                     $barang = $this->m_home->detail_barang($items['id']);
                     $berat = $items['qty'] * $barang-> berat;
                     $total_berat = $total_berat + $berat;

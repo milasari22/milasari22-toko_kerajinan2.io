@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MILA SARI | <?= $title  ?></title>
+  <title>Kreasi Indah | <?= $title  ?></title>
 
   
   <!-- Google Font: Source Sans Pro -->

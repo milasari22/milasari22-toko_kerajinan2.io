@@ -16,6 +16,9 @@ class Belanja extends CI_Controller
 
     public function index()
     {
+        if (empty($this->cart->contents())){
+            redirect('home');
+        }
         $data = array(
             'title' => 'Keranjang Belanja',
             'isi' => 'v_belanja',
@@ -94,6 +97,7 @@ class Belanja extends CI_Controller
         );
  
         if ($this->form_validation->run() ==FALSE) {
+            $this->pelanggan_login->proteksi_halaman();
             $data = array(
                 'title' => 'Chek Out Belanja',
                 'isi' => 'v_chekout',

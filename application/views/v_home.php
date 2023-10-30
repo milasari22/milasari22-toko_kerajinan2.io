@@ -1,6 +1,6 @@
 
 <div id="carouselExampleDark" class="carousel carousel-light">
-  <img src="<?= base_url() ?>assets/bg-5.png" width="1150px" height="470px">
+  <img src="<?= base_url() ?>assets/bg-6.png" width="1150px" height="470px">
   <div class="carousel-caption d-md-block text-dark" >
   </div>
       <br>
