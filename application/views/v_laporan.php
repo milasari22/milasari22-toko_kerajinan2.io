@@ -52,7 +52,7 @@
                     
                     <div class="col-sm-12">
                       <div class="form-group">
-                        <button type="sumbit" class="btn btn-primary btn-block">Cetak Laporan</button>
+                        <button type="sumbit" class="btn btn-primary btn-block"><i class="fa fa-print"></i> Cetak Laporan</button>
                       </div>
                     </div>
                     <?php echo form_close()?> 
@@ -102,7 +102,7 @@
 
                     <div class="col-sm-12">
                       <div class="form-group">
-                        <button type="sumbit" class="btn btn-primary btn-block">Cetak Laporan</button>
+                        <button type="sumbit" class="btn btn-primary btn-block"><i class="fa fa-print"></i>     Cetak Laporan</button>
                       </div>
                     </div>
                     <?php echo form_close()?> 
@@ -118,8 +118,33 @@
     <div class="card card-primary">
         <div class="card-header">
             <h3 class="card-title">Laporan Tahunan</h3>
-              </div>
-              <div class="card-body">
+          </div>
+        <div class="card-body">
+          <?php echo form_open('laporan/lap_tahunan')?>
+            <div class="row">
+                    <div class="col-sm-12">
+                      <!-- text input -->
+                      <div class="form-group">
+                        <label>Tahun</label>
+                        <select name="tahun" class="form-control">
+                        <?php 
+                            $mulai = date('Y') - 1;
+                            for ($i = $mulai; $i < $mulai + 7 ; $i++) {
+                                echo '<option value="'. $i .'">' . $i .'</option>';
+                            }
+                            ?>
+                        </select>
+                      </div>
+                    </div>
+
+                    
+                    <div class="col-sm-12">
+                      <div class="form-group">
+                        <button type="sumbit" class="btn btn-primary btn-block"><i class="fa fa-print"></i> Cetak Laporan</button>
+                      </div>
+                    </div>
+            </div>
+          <?php echo form_close() ?>
         </div>
     </div>
 </div>

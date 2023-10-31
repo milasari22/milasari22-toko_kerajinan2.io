@@ -1,4 +1,4 @@
-<div class="row">
+<br><br><div class="row">
         <div class="col-12 col-sm-12">
     <?php
         if ($this->session->flashdata('pesan')) 

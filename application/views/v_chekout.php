@@ -11,7 +11,6 @@
                 <!-- /.col -->
               </div>
               <!-- info row -->
-              <!-- /.row -->
 
               <!-- Table row -->
               <div class="row">
@@ -181,7 +180,7 @@
                 <div class="col-12">
                   <a href="<?= base_url('belanja') ?>" class="btn btn-danger"><i class="fas fa-backward"></i> Kembali Ke Keranjang</a>
 
-                  <button type="submit" class="btn btn-info float-right"><i class="fas fa-shopping-cart"></i>Proses Chek Out
+                  <button type="submit" class="btn btn-info float-right"><i class="fas fa-shopping-cart"></i>Proses Beli
                   </button>
 
                   <?php echo form_close() ?>

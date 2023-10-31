@@ -4,7 +4,7 @@
                 <h3 class="card-title">Data Kategori</h3>
 
                 <div class="card-tools">
-                  <button data-toggle="modal" data-target="#add" type="button" class="btn btn-primary btn-sm"><i class="fas fa-plus"></i>Add</button>
+                  <button data-toggle="modal" data-target="#add" type="button" class="btn btn-primary btn-sm"><i class="fas fa-plus"></i>Keranjang</button>
                 </div>
                 <!-- /.card-tools -->
               </div>
@@ -73,8 +73,8 @@
              
             </div>
             <div class="modal-footer justify-content-between">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              <button type="submit" class="btn btn-primary">Save</button>
+              <button type="button" class="btn btn-default" data-dismiss="modal">Kembali</button>
+              <button type="submit" class="btn btn-primary">Simpan</button>
 
                 <?php 
                 echo form_close();
@@ -109,8 +109,8 @@
              </div>
             </div>
             <div class="modal-footer justify-content-between">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              <button type="submit" class="btn btn-primary">Save</button>
+              <button type="button" class="btn btn-default" data-dismiss="modal">Kembali</button>
+              <button type="submit" class="btn btn-primary">Simpan</button>
 
                 <?php 
                 echo form_close();
@@ -129,7 +129,7 @@
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h4 class="modal-title">Delete <?= $value->nama_kategori ?></h4>
+              <h4 class="modal-title">Hapus <?= $value->nama_kategori ?></h4>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
@@ -138,8 +138,8 @@
               <h5>Apakah Anda Yakin Ingin Menghapus Data Ini...?</h5>
             </div>
             <div class="modal-footer justify-content-between">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              <a href="<?= base_url('kategori/delete/' . $value->id_kategori) ?>" class="btn btn-primary">Delete</a>
+              <button type="button" class="btn btn-default" data-dismiss="modal">Kembali</button>
+              <a href="<?= base_url('kategori/delete/' . $value->id_kategori) ?>" class="btn btn-primary">Hapus</a>
             </div>
 
           </div>

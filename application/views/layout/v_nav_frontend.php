@@ -42,9 +42,8 @@
         <li class="nav-item">
           
               <?php if ($this->session->userdata('nama_pelanggan') == "") { ?>
-                <a class="nav-link" href="<?= base_url('pelanggan/login') ?>" >
+                <a class="nav-link btn btn-outline-light" href="<?= base_url('pelanggan/login') ?>" >
                   <span class="brand-text font-weight-light">Login/Register</span>
-                  <img src="<?php base_url() ?>template/dist/img/user1-128x128.jpg" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
                 </a>
 
               <?php } else { ?>
@@ -62,7 +61,7 @@
                 <i class="fas fa-shopping-cart mr-2"></i>Pesanan Saya
               </a>
               <div class="dropdown-divider"></div>
-              <a href="<?= base_url('pelanggan/logout')?>" class="dropdown-item dropdown-footer">Log Out</a>
+              <a href="<?= base_url('pelanggan/logout')?>" class="dropdown-item dropdown-footer">Keluar</a>
             </div>
           <?php } ?>
         </li>
@@ -83,7 +82,7 @@
             <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
               <?php if (empty($keranjang)) { ?>
                 <a href="#" class="dropdown-item">
-                  <p>Keranjang Belanja Kosong</p>
+                  <p>Keranjang Belanja Anda Kosong</p>
                 </a>
               <?php }else{
                 foreach ($keranjang as $key => $value) { 
@@ -121,7 +120,7 @@
               </a>
               <div class="dropdown-divider"></div>
               <a href="<?= base_url('belanja') ?>" class="dropdown-item dropdown-footer">Lihat Keranjang</a>
-              <a href="#" class="dropdown-item dropdown-footer">Check Out </a>
+              <a href="#" class="dropdown-item dropdown-footer">Beli Sekarang </a>
               <?php } ?>
 
             </div>
@@ -131,19 +130,3 @@
   </nav>
   <!-- /.navbar -->
   
-  <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <div class="content-header">
-      <div class="container">
-        <div class="row mb-2">
-          <div class="col-sm-6">
-          </div><!-- /.col -->
-        </div><!-- /.row -->
-      </div><!-- /.container-fluid -->
-    </div>
-    <!-- /.content-header -->
-
-    <!-- Main content -->
-    <div class="content">
-      <div class="container">

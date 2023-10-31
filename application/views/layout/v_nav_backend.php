@@ -47,32 +47,22 @@
           </li>
           
           <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-cubes"></i>
-              <p>
-                Produk
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-                <li class="nav-item">
                   <a href="<?= base_url('barang') ?>"  class="nav-link ?> <?php if(uri_string(1) == 'barang'){echo "active"; } ?>" class="nav-link">
-                    <i class="nav-icon far fa-circle text-success"></i>
+                    <i class="nav-icon fas fa-cubes"></i>
                     <p>
                       Barang
                     </p>
                   </a>
                 </li>
+
                 <li class="nav-item">
                   <a href="<?= base_url('kategori') ?>" class="nav-link <?= base_url('kategori') ?> <?php if(uri_string(1) == 'kategori'){echo "active"; } ?>">
-                    <i class="nav-icon far fa-circle text-success"></i>
+                    <i class="nav-icon fas fa-list"></i>
                     <p>
                       Kategori Barang
                     </p>
                   </a>
                 </li>
-            </ul>
-          </li>
 
           <li class="nav-item">
             <a href="<?= base_url('laporan') ?>" class="nav-link">
@@ -93,31 +83,21 @@
           </li>
           
           <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-users"></i>
+            <a href="<?= base_url('admin/beli') ?>" class="nav-link <?= base_url('kategori') ?> <?php if(uri_string(1) == 'pesanan_masuk'){echo "active"; } ?>">
+              <i class="nav-icon fas fa-inbox"></i>
               <p>
-                User
-                <i class="right fas fa-angle-left"></i>
+              Kasir Ofline
               </p>
             </a>
-            <ul class="nav nav-treeview">
-            <li class="nav-item">
+          </li>
+          
+          <li class="nav-item">
             <a href="<?= base_url('user') ?>" class="nav-link <?php if(uri_string(1) == 'user'){echo "active"; } ?>">
-              <i class="nav-icon far fa-circle text-warning"></i>
+              <i class="nav-icon fas fa-user"></i>
               <p>
                 Admin
               </p>
             </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon far fa-circle text-warning"></i>
-              <p>
-                Pelanggan
-              </p>
-            </a>
-          </li>
-            </ul>
           </li>
 
           <li class="nav-item">

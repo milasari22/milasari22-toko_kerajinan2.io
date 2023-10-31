@@ -75,9 +75,9 @@
 
                 </table>
 
-                        <button type="submit" class="btn btn-primary btn-flat"><i class="fa fa-save"></i> Update Cart</button>
-                        <a href="<?= base_url('belanja/clear')?>" class="btn btn-danger btn-flat"><i class="fas fa-recycle"></i>  Clear Cart</a>
-                        <a href="<?= base_url('belanja/chekout')?>" class="btn btn-success btn-flat"><i class="fas fa-inbox"></i>  Check Out</a>
+                        <button type="submit" class="btn btn-primary btn-flat"><i class="fa fa-save"></i> Perbarui Keranjang</button>
+                        <a href="<?= base_url('belanja/clear')?>" class="btn btn-danger btn-flat"><i class="fas fa-recycle"></i>  Hapus Semua</a>
+                        <a href="<?= base_url('belanja/chekout')?>" class="btn btn-success btn-flat"><i class="fas fa-inbox"></i>  Beli Sekarang</a>
                     <?php echo form_close(); ?>
                     <br>
                 </div>

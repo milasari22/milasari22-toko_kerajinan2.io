@@ -58,6 +58,19 @@ class Laporan extends CI_Controller
          $this->load->view('layout/v_wrapper_backend', $data, FALSE);
     }
 
+    public function lap_tahunan()
+    {
+        $tahun = $this->input->post('tahun');
+
+        $data = array(
+            'title' => 'Laporan Penjualan Bulanan',
+            'tahun' => $tahun,
+            'laporan' => $this->m_laporan->lap_tahunan($tahun),
+            'isi' => 'v_lap_tahunan',
+         );
+
+         $this->load->view('layout/v_wrapper_backend', $data, FALSE);
+    }
 }
 
 /* End of file Controllername.php */

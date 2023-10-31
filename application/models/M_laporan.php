@@ -23,7 +23,15 @@ class M_laporan extends CI_Model
         $this->db->where('MONTH(tgl_order)', $bulan);
         $this->db->where('YEAR( tgl_order)', $tahun);
         $this->db->where('status_bayar');
-        
+        return $this->db->get()->result();
+    }
+
+    public function lap_tahunan($tahun)
+    {
+        $this->db->select('*');
+        $this->db->from('tbl_transaksi');
+        $this->db->where('YEAR( tgl_order)', $tahun);
+        $this->db->where('status_bayar');
         return $this->db->get()->result();
     }
 }

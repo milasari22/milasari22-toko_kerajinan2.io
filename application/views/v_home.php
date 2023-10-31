@@ -1,13 +1,41 @@
-
-<div id="carouselExampleDark" class="carousel carousel-light">
-  <img src="<?= base_url() ?>assets/bg-6.png" width="1150px" height="470px">
-  <div class="carousel-caption d-md-block text-dark" >
+<div id="carouselExampleDark" class="carousel carousel-dark slide">
+  <div class="carousel-indicators">
   </div>
-      <br>
-</div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="1000">
+      <img src="<?= base_url() ?>assets/bg-10.jpeg" class="d-block w-100" >
+      <div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="<?= base_url() ?>assets/slider-1.jpeg" class="d-block w-100" >
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Second slide label</h5>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="<?= base_url() ?>assets/slider-2.jpeg" class="d-block w-100" >
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Third slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div><br><br>
 
 <!--About--->
-<br><div class="content">
+<br><br><div class="content">
       <div class="container">
             <div>
               <div id="tentang"><br><br><br>
@@ -78,19 +106,20 @@
                 </div>
                 <div class="card-footer">
                   <div class="row">
-                    <div class="col-sm-6">
+                    <div class="col-sm-2">
                       <div class="text-left">
-                        <h5><span class="badge bg-success">Rp. <?= number_format($value->harga, 0) ?></span></h5>
+                        <h5><span class="badge bg-danger">Rp. <?= number_format($value->harga, 0) ?></span></h5>
                       </div>
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-sm-10">
                       <div class="text-right">
                         <a href="<?= base_url('home/detail_barang/' .$value->id_barang)?>" class="btn btn-sm btn-warning">
                           <i class="fas fa-eye"></i>
                         </a>
                         <button type="submit" class="btn btn-sm btn-primary swalDefaultSuccess">
-                          <i class="fas fa-cart-plus">Add</i>
+                          <i class="fas fa-cart-plus">Keranjang</i>
                         </button>
+                    <a href="<?= base_url('belanja/chekout')?>" class="btn btn-success btn-sm "><i class="fas fa-inbox"></i>  Beli</a>
                       </div>
                     </div>
                   </div>
@@ -125,77 +154,3 @@
   });
 </script><br><br>
 
-
-<!--Galeri kami--->
-<br><br><br><br  id="produk_kami" ><br><h1 class="text-center"><b>Galeri</b><i class="text-orange"> <b>Toko</b></i></h1>
-<div class="card-solid">
-          <div class="col-12">
-              <div class="card-body">
-                <div>
-                  <div class="filter-container p-0 row">
-                    <div class="filtr-item col-sm-2" data-category="1" data-sort="white sample">
-                      <a href="assets/bg-2.jpeg" data-toggle="lightbox" data-title="sample 1 - white">
-                        <img src="<?= base_url() ?>assets/bg-2.jpeg" class="img-fluid mb-2" alt="white sample"/>
-                      </a>
-                    </div>
-                    <div class="filtr-item col-sm-2" data-category="2, 4" data-sort="black sample">
-                      <a href="assets/bg-2.jpeg" data-toggle="lightbox" data-title="sample 2 - black">
-                        <img src="<?= base_url() ?>assets/bg-2.jpeg" class="img-fluid mb-2" alt="black sample"/>
-                      </a>
-                    </div>
-                    <div class="filtr-item col-sm-2" data-category="3, 4" data-sort="red sample">
-                      <a href="assets/bg-2.jpeg" data-toggle="lightbox" data-title="sample 3 - red">
-                        <img src="<?= base_url() ?>assets/bg-2.jpeg" class="img-fluid mb-2" alt="red sample"/>
-                      </a>
-                    </div>
-                    <div class="filtr-item col-sm-2" data-category="3, 4" data-sort="red sample">
-                      <a href="assets/bg-2.jpeg" data-toggle="lightbox" data-title="sample 4 - red">
-                        <img src="<?= base_url() ?>assets/bg-2.jpeg" class="img-fluid mb-2" alt="red sample"/>
-                      </a>
-                    </div>
-                    <div class="filtr-item col-sm-2" data-category="2, 4" data-sort="black sample">
-                      <a href="assets/bg-2.jpeg" data-toggle="lightbox" data-title="sample 5 - black">
-                        <img src="<?= base_url() ?>assets/bg-2.jpeg" class="img-fluid mb-2" alt="black sample"/>
-                      </a>
-                    </div>
-                    <div class="filtr-item col-sm-2" data-category="1" data-sort="white sample">
-                      <a href="assets/bg-2.jpeg" data-toggle="lightbox" data-title="sample 6 - white">
-                        <img src="<?= base_url() ?>assets/bg-2.jpeg" class="img-fluid mb-2" alt="white sample"/>
-                      </a>
-                    </div>
-                    <div class="filtr-item col-sm-2" data-category="1" data-sort="white sample">
-                      <a href="assets/bg-2.jpeg" data-toggle="lightbox" data-title="sample 7 - white">
-                        <img src="<?= base_url() ?>assets/bg-2.jpeg" class="img-fluid mb-2" alt="white sample"/>
-                      </a>
-                    </div>
-                    <div class="filtr-item col-sm-2" data-category="2, 4" data-sort="black sample">
-                      <a href="assets/bg-2.jpeg" data-toggle="lightbox" data-title="sample 8 - black">
-                        <img src="<?= base_url() ?>assets/bg-2.jpeg" class="img-fluid mb-2" alt="black sample"/>
-                      </a>
-                    </div>
-                    <div class="filtr-item col-sm-2" data-category="3, 4" data-sort="red sample">
-                      <a href="assets/bg-2.jpeg" data-toggle="lightbox" data-title="sample 9 - red">
-                        <img src="<?= base_url() ?>assets/slider-1.jpeg" class="img-fluid mb-2" alt="red sample"/>
-                      </a>
-                    </div>
-                    <div class="filtr-item col-sm-2" data-category="1" data-sort="white sample">
-                      <a href="assets/bg-2.jpeg" data-toggle="lightbox" data-title="sample 10 - white">
-                        <img src="<?= base_url() ?>assets/slider-2.jpeg" class="img-fluid mb-2" alt="white sample"/>
-                      </a>
-                    </div>
-                    <div class="filtr-item col-sm-2" data-category="1" data-sort="white sample">
-                      <a href="assets/bg-2.jpeg" data-toggle="lightbox" data-title="sample 11 - white">
-                        <img src="<?= base_url() ?>assets/slider-3.jpeg" class="img-fluid mb-2" alt="white sample"/>
-                      </a>
-                    </div>
-                    <div class="filtr-item col-sm-2" data-category="2, 4" data-sort="black sample">
-                      <a href="assets/bg-2.jpeg" data-toggle="lightbox" data-title="sample 12 - black">
-                        <img src="<?= base_url() ?>assets/slider-4.jpeg" class="img-fluid mb-2" alt="black sample"/>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-          </div>
-
-          

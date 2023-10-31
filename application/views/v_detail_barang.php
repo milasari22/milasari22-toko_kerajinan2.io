@@ -35,7 +35,7 @@
               ?>
 
               <div>
-              <h4 class="mt-3">Ukuran <small>Silahkan pilih salah satu////</small></h4>
+              <h4 class="mt-3">Variasi Ukuran <small>Silahkan pilih salah satu</small></h4>
               <div class="btn-group btn-group-toggle" data-toggle="buttons">
                 <label class="btn btn-default text-center">
                   <input type="radio" name="color_option" id="color_option_b1" autocomplete="off">
@@ -54,6 +54,12 @@
                   <span class="text-xl">L</span>
                   <br>
                   Besar
+                </label>
+                <label class="btn btn-default text-center">
+                  <input type="radio" name="color_option" id="color_option_b3" autocomplete="off">
+                  <span class="text-xl">XL</span>
+                  <br>
+                  Jumbo
                 </label>
               </div>
 
