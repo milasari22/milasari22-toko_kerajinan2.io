@@ -77,7 +77,11 @@
 
 
 <!--produk kami--->
-<br><br><br><br  id="produk_kami" ><br><h1 class="text-center"><b>Produk</b><i class="text-orange"> <b>Kami</b></i></h1>
+<br><br><br><br  id="produk_kami" ><br><h1 class="text-center"><b>Produk</b><i class="text-orange"> <b>Kami</b></i></h1><br>
+<div class="text-center">
+                Ditoko Kami menggunakan dua opsi bisa Ambil di toko dan Pesan antar. <br>
+                Silahkan memesan terlebih dahulu jika anda jauh dari lokasi toko kami. <br>
+                Request ukuran ataupun warna bisa <a href="https://api.whatsapp.com/send?phone=628123456789" target="_blank"><i></i>Hubungi Kami di WhatsApp</a></div><br><br>
 <div class="card-solid">
         <div class="card-body pb-0">
           <div class="row">
@@ -119,7 +123,6 @@
                         <button type="submit" class="btn btn-sm btn-primary swalDefaultSuccess">
                           <i class="fas fa-cart-plus">Keranjang</i>
                         </button>
-                    <a href="<?= base_url('belanja/chekout')?>" class="btn btn-success btn-sm "><i class="fas fa-inbox"></i>  Beli</a>
                       </div>
                     </div>
                   </div>

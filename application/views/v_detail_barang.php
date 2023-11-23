@@ -34,34 +34,6 @@
                 echo form_hidden('redirect_page', str_replace('index.php/','',current_url()));
               ?>
 
-              <div>
-              <h4 class="mt-3">Variasi Ukuran <small>Silahkan pilih salah satu</small></h4>
-              <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                <label class="btn btn-default text-center">
-                  <input type="radio" name="color_option" id="color_option_b1" autocomplete="off">
-                  <span class="text-xl">S</span>
-                  <br>
-                  Kecil
-                </label>
-                <label class="btn btn-default text-center">
-                  <input type="radio" name="color_option" id="color_option_b2" autocomplete="off">
-                  <span class="text-xl">M</span>
-                  <br>
-                  Sedang
-                </label>
-                <label class="btn btn-default text-center">
-                  <input type="radio" name="color_option" id="color_option_b3" autocomplete="off">
-                  <span class="text-xl">L</span>
-                  <br>
-                  Besar
-                </label>
-                <label class="btn btn-default text-center">
-                  <input type="radio" name="color_option" id="color_option_b3" autocomplete="off">
-                  <span class="text-xl">XL</span>
-                  <br>
-                  Jumbo
-                </label>
-              </div>
 
               <div class="mt-4">
                 <div class="row">
@@ -73,7 +45,6 @@
                     <i class="fas fa-cart-plus fa-lg mr-2"></i>
                     Add to Cart
                     </button>
-                    <a href="<?= base_url('belanja/chekout')?>" class="btn btn-success btn-flat"><i class="fas fa-inbox"></i>  Check Out</a>
                   </div>
                 </div>
               </div>

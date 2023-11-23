@@ -49,7 +49,7 @@ class Rajaongkir extends CI_Controller
         $data_provinsi = $array_response['rajaongkir']['results'];
         echo "<option value=''>--Pilih Provinsi--</option>";
         foreach ($data_provinsi as $key => $value) {
-            echo "<option value='".$value['province']."' id_provinsi='".$value['province_id']."'>". $value['province']."</option>";
+            echo "<option value='".$value['province_id']."' id_provinsi='".$value['province_id']."'>". $value['province']."</option>";
         }
         }
     }
@@ -87,7 +87,7 @@ class Rajaongkir extends CI_Controller
             $data_kota = $array_response['rajaongkir']['results'];
             echo "<option value=''>--Pilih Kota--</option>";
             foreach ($data_kota as $key => $value) {
-                echo "<option value='".$value['city_name']."' id_kota='".$value['city_id']."' >". $value['city_name']."</option>";
+                echo "<option value='".$value['city_id']."' id_kota='".$value['city_id']."' >". $value['city_name']."</option>";
             }
         }
     }

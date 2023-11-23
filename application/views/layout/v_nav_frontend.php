@@ -3,8 +3,6 @@
  <nav class="main-header navbar navbar-expand-md navbar-light navbar-orange">
     <div class="container ">
       <a href="#" class="navbar-brand">
-      
-      <img src="<?php base_url() ?>assets/bg-6.png" class="brand-image img-circle elevation-3" style="opacity: .8">
       </a>
 
       <button class="navbar-toggler order-1" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">

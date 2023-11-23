@@ -1,15 +1,18 @@
-        <div class="col-12">
+<div class="col-12">
             <!-- Main content -->
             <div class="invoice p-3 mb-3">
               <!-- title row -->
-              <div class="row">      
-             <div class="col-12">
+              <div class="row">   
+
+            <div class="text-center">
+              <h2>
+              <i class="fas fa-shopping-cart"></i> <?= $title ?></h2>
+            </div>
+            <div class="col-12">
                   <h4>
-                    <i class="fas fa-shopping-cart"></i> <?= $title ?>
-                    <small class="float-right">Bulan: <?= $bulan ?> Tahun: <?= $tahun ?></small>
+                    <small class="float-right">Bulan: <?= $bulan?>/<?= $tahun?></small>
                   </h4>
-                </div>
-                <!-- /.col -->
+            </div>
               </div>
             
               
@@ -28,16 +31,27 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <?php $no = 1;
-                     foreach ($laporan as $key => $value) { ?>
-                      <tr>
-                        <td><?= $no++ ?></td>
-                      </tr>
+                        <?php $no = 1;
+                          $grand_total = 0;
+                         foreach ($laporan as $key => $value) { 
+                          $tot_harga = $value->qty * $value->harga;
+                          $grand_total = $grand_total + $tot_harga;
+                        ?>
+                          
+                    <tr>
+                      <td><?= $no++ ?></td>
+                      <td><?= $value->no_order ?></td>
+                      <td><?= $value->nama_barang ?></td>
+                      <td>Rp.<?= number_format($value->harga, 0)?></td>
+                      <td><?= $value->qty ?></td>
+                      <td>Rp. <?= number_format($tot_harga, 0) ?></td>
+                    </tr>
+                   
                     <?php } ?>
 
                     </tbody>
                   </table>
-                  <h1>Grand Total : Rp.</h1>
+                  <h1>Grand Total : Rp. <?= number_format($grand_total, 0) ?></h1>
                 </div>
                 <!-- /.col -->
               </div>

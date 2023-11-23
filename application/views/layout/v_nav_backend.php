@@ -63,18 +63,9 @@
                     </p>
                   </a>
                 </li>
-
-          <li class="nav-item">
-            <a href="<?= base_url('laporan') ?>" class="nav-link">
-              <i class="nav-icon far fa-calendar-alt"></i>
-              <p>
-                Laporan Penjualan
-              </p>
-            </a>
-          </li>
           
           <li class="nav-item">
-            <a href="<?= base_url('admin/pesanan_masuk') ?>" class="nav-link <?= base_url('kategori') ?> <?php if(uri_string(1) == 'pesanan_masuk'){echo "active"; } ?>">
+            <a href="<?= base_url('admin/pesanan_masuk') ?>" class="nav-link <?php if(uri_string(1) == 'admin/pesanan_masuk'){echo "active"; } ?>">
               <i class="nav-icon fas fa-download"></i>
               <p>
               Pesanan Masuk
@@ -83,10 +74,10 @@
           </li>
           
           <li class="nav-item">
-            <a href="<?= base_url('admin/beli') ?>" class="nav-link <?= base_url('kategori') ?> <?php if(uri_string(1) == 'pesanan_masuk'){echo "active"; } ?>">
-              <i class="nav-icon fas fa-inbox"></i>
+            <a href="<?= base_url('laporan') ?>" class="nav-link <?php if(uri_string(1) == 'laporan'){echo "active"; } ?>">
+              <i class="nav-icon far fa-calendar-alt"></i>
               <p>
-              Kasir Ofline
+                Laporan Penjualan
               </p>
             </a>
           </li>
@@ -101,7 +92,7 @@
           </li>
 
           <li class="nav-item">
-            <a href="<?= base_url('admin/lokasi_toko') ?>" class="nav-link">
+            <a href="<?= base_url('admin/lokasi_toko') ?>" class="nav-link <?php if(uri_string(1) == 'admin/lokasi_toko'){echo "active"; } ?>">
               <i class="nav-icon fas fa-home"></i>
               <p>
                 Alamat Toko

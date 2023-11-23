@@ -8,10 +8,11 @@
       <div class="col-md-6">
         <h3><br>Kontak Kami</h3>
         <p>
-          Jl misalkan<br>
-          Jembar, Jawa Timur<br>
+          Alamat: Perum Jember Permai II A.25, <br>
+          Tegal Boto Kidul, Sumbersari, Kec. Sumbersari,<br> 
+          Kabupaten Jember, Jawa Timur 68121fa-border <br>
           Email: kelompok04@gmail.com<br>
-          Telepon: (123) 456-7890
+          Telepon: 082336855778
         </p>
       </div>
       <div class="col-md-6">

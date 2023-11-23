@@ -45,7 +45,7 @@
                                 if ($value->level_user == 1){
                                     echo '<span class="badge bg-primary">Admin</span>';
                                 }else{
-                                    echo '<span class="badge bg-success">User</span>';
+                                    echo '<span class="badge bg-success">Kasir</span>';
                                 }
                             ?></td>
                             <td class="text-center">
