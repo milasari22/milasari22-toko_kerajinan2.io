@@ -4,10 +4,6 @@
   <div class="carousel-inner">
     <div class="carousel-item active" data-bs-interval="1000">
       <img src="<?= base_url() ?>assets/bg-10.jpeg" class="d-block w-100" >
-      <div class="carousel-caption d-none d-md-block">
-        <h5>First slide label</h5>
-        <p>Some representative placeholder content for the first slide.</p>
-      </div>
     </div>
     <div class="carousel-item" data-bs-interval="2000">
       <img src="<?= base_url() ?>assets/slider-1.jpeg" class="d-block w-100" >
@@ -32,57 +28,51 @@
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
-</div><br><br>
 
 <!--About--->
-<br><br><div class="content">
+<br><div class="content">
       <div class="container">
             <div>
-              <div id="tentang"><br><br><br>
-                <h1 class="text-center"><b>Tentang</b><i class="text-orange">Kami</i></h1>
+              <div id="tentang"><br><br>
+                <!-- <h1 class="text-center"><b>Tentang</b><i class="text-orange">Kami</i></h1> -->
               </div>
               
-        <div class="row">
-          <div class="col-lg-6">
-              <div class="card-body form-group">
-                <img class="d-block w-100" src="<?php base_url() ?>assets/des1.jpeg">
-              </div>
-            </div>
-            
-          <div class="col-lg-6">
-              <div class="card-body form-group"><br>
-                <h4>Kenapa Harus Kreasi Indah?</h4>
-                <p class="card-text-">
-                  Karena Toko kami merupakan destinasi terbaik bagi pecinta seni dan
-                  orang-orang yang menghargai keunikan produk-produk handmade
-                  berkualitas tinggi. Dengan keanggunan dan inovasi, kami menghadirkan
-                  beragam kerajinan tangan dari para pengrajin berbakat dan
-                  berpengalaman.
-                </p>
-                <p>
+              <div class="row">
+    <div class="col-lg-6">
+        <div class="card-body form-group">
+            <img class="img-fluid rounded" src="<?= base_url() ?>assets/des2.jpeg" alt="Beautiful Background">
+        </div>
+    </div>
+
+    <div class="col-lg-6">
+        <div class="card-body form-group">
+            <h4 class="text-grey">Kenapa Harus Kreasi Indah?</h4>
+            <p class="lead">
+                Karena Toko kami merupakan destinasi terbaik bagi pecinta seni dan
+                orang-orang yang menghargai keunikan produk-produk handmade
+                berkualitas tinggi. Dengan keanggunan dan inovasi, kami menghadirkan
+                beragam kerajinan tangan dari para pengrajin berbakat dan
+                berpengalaman.
+            </p>
+            <p class="text-muted">
                 Di Toko kami terdapat banyak hasil karya seni kerajinan yang kami
                 jual. Mulai dari bambu, kertas, batok kelapa, totol bekas, cangkang
                 telu, pelepah pisang, tanah liat dan masih banyak lagi.
-                </p>
-              </div>
-          </div>
-          <!-- /.col-md-6 -->
+            </p>
         </div>
-        <!-- /.row -->
-      </div><!-- /.container-fluid -->
     </div>
-    <!-- /.content -->
-  </div>
-  <!-- /.content-wrapper -->
+</div>
 
 
-<!--produk kami--->
-<br><br><br><br  id="produk_kami" ><br><h1 class="text-center"><b>Produk</b><i class="text-orange"> <b>Kami</b></i></h1><br>
-<div class="text-center">
-                Ditoko Kami menggunakan dua opsi bisa Ambil di toko dan Pesan antar. <br>
-                Silahkan memesan terlebih dahulu jika anda jauh dari lokasi toko kami. <br>
-                Request ukuran ataupun warna bisa <a href="https://api.whatsapp.com/send?phone=628123456789" target="_blank"><i></i>Hubungi Kami di WhatsApp</a></div><br><br>
-<div class="card-solid">
+<!--produk kami---><!-- Bagian Header Produk Kami -->
+<br><br><br><div id="produk_kami" class="container text-center mt-5">
+    <h1><b>Produk</b><i class="text-orange"> <b>Kami</b></i></h1>
+    <p class="lead">
+        Di toko kami, Anda memiliki dua opsi: ambil di toko dan pesan antar. <br>
+        Pesan terlebih dahulu jika Anda berada jauh dari lokasi toko kami. <br>
+        Jika Anda memiliki permintaan khusus terkait ukuran atau warna, <a href="https://api.whatsapp.com/send?phone=628123456789" target="_blank">Hubungi Kami di WhatsApp</a>.
+    </p>
+</div><br><br>
         <div class="card-body pb-0">
           <div class="row">
           <?php foreach ($barang as $key => $value) { ?>
@@ -156,4 +146,68 @@
     });
   });
 </script><br><br>
+
+
+  <!-- Gaya CSS kustom -->
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f8f9fa;
+      color: #343a40;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Carousel */
+    #carouselExampleDark {
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .carousel-inner img {
+      width: 100%;
+      height: auto;
+    }
+
+    .carousel-caption {
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+    }
+
+    /* About Section */
+    #tentang {
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    /* Produk Section */
+    #produk_kami {
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .card {
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Add more styles as needed */
+  </style>
+</head>
+<body>
+
+  <!-- Tambahkan konten HTML Anda di sini -->
+
+  <!-- Script Bootstrap dan JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
 

@@ -2,11 +2,13 @@
  <!-- Navbar -->
  <nav class="main-header navbar navbar-expand-md navbar-light navbar-orange">
     <div class="container ">
+      <img src="<?= base_url() ?>assets/logo.jpeg" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
       <a href="#" class="navbar-brand">
       </a>
 
       <button class="navbar-toggler order-1" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
+        
       </button>
 
       <ul class="navbar-nav">

@@ -72,6 +72,15 @@
               </p>
             </a>
           </li>
+
+          <li class="nav-item">
+                  <a href="kasir" class="nav-link <?php if(uri_string(1) == 'kasir'){echo "active"; } ?>">
+                    <i class="nav-icon fas fa-inbox"></i>
+                    <p>
+                      Kasir Ofline
+                    </p>
+                  </a>
+                </li>
           
           <li class="nav-item">
             <a href="<?= base_url('laporan') ?>" class="nav-link <?php if(uri_string(1) == 'laporan'){echo "active"; } ?>">
