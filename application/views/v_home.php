@@ -199,15 +199,3 @@
 
     /* Add more styles as needed */
   </style>
-</head>
-<body>
-
-  <!-- Tambahkan konten HTML Anda di sini -->
-
-  <!-- Script Bootstrap dan JavaScript -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-</body>
-</html>
-

@@ -92,6 +92,15 @@
           </li>
           
           <li class="nav-item">
+            <a href="<?= base_url('data_pelanggan') ?>" class="nav-link <?php if(uri_string(1) == 'data_pelanggan'){echo "active"; } ?>">
+              <i class="nav-icon fas fa-user"></i>
+              <p>
+                Pelanggan
+              </p>
+            </a>
+          </li>
+
+          <li class="nav-item">
             <a href="<?= base_url('user') ?>" class="nav-link <?php if(uri_string(1) == 'user'){echo "active"; } ?>">
               <i class="nav-icon fas fa-user"></i>
               <p>

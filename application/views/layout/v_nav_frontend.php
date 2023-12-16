@@ -120,7 +120,7 @@
               </a>
               <div class="dropdown-divider"></div>
               <a href="<?= base_url('belanja') ?>" class="dropdown-item dropdown-footer">Lihat Keranjang</a>
-              <a href="#" class="dropdown-item dropdown-footer">Beli Sekarang </a>
+              <a href="<?= base_url('belanja/chekout')?>" class="dropdown-item dropdown-footer">Beli Sekarang </a>
               <?php } ?>
 
             </div>
